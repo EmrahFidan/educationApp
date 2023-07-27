@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:education/screens/settings_page.dart';
+import 'package:education/screens/settings/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:education/recurring/colors.dart';
 import 'package:education/screens/favorities_page.dart';

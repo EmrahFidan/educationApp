@@ -1,4 +1,6 @@
 import 'package:education/recurring/colors.dart';
+import 'package:education/screens/settings/how_to_play.dart';
+import 'package:education/screens/settings/profile.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -51,14 +53,14 @@ class SettingsPage extends StatelessWidget {
             const SizedBox(height: 50),
             _buildButton("Profil", () {
               // Buton 1 tıklandığında yapılacak işlemler
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: (_) => const ProfilePage()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const ProfilePage()));
             }),
             const SizedBox(height: 50),
             _buildButton("Nasıl Oynanır ?", () {
               // Buton 2 tıklandığında yapılacak işlemler
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: (_) => const HowToPlayPage()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const HowToPlayPage()));
             }),
           ],
         ),
