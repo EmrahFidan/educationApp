@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:education/screens/login/signUp_page.dart';
-
+import 'package:education/screens/play/play.dart';
 import 'package:education/screens/settings/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:education/recurring/colors.dart';
@@ -279,10 +279,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: TextButton(
               onPressed: () {
                 // Butona tıklandığında yapılacak işlemler
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const VideoPage()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const VideoPage()),
+                );
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
