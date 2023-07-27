@@ -1,7 +1,10 @@
 // ignore_for_file: library_private_types_in_public_api
 
+import 'package:education/screens/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:education/recurring/colors.dart';
+import 'package:education/screens/favorities_page.dart';
+import 'package:education/screens/ranked_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -199,27 +202,27 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center, // Dikeyde merkez
             crossAxisAlignment: CrossAxisAlignment.center, // Yatayda merkez
             children: [
-              // buildPanelButton(
-              // context,
-              // 'Ayarlar',
-              // Icons.settings_outlined,
-              // // const SettingsPage(),
-              // panelWidth,
-              // ),
-              // buildPanelButton(
-              // context,
-              // 'Favoriler',
-              // Icons.favorite_border_outlined,
-              // const FavoritiesPage(),
-              // panelWidth,
-              // ),
-              // buildPanelButton(
-              //   context,
-              //   'Sıralama',
-              //   Icons.account_tree_outlined,
-              //   const RankedPage(),
-              //   panelWidth,
-              // ),
+              buildPanelButton(
+                context,
+                'Ayarlar',
+                Icons.settings_outlined,
+                const SettingsPage(),
+                panelWidth,
+              ),
+              buildPanelButton(
+                context,
+                'Favoriler',
+                Icons.favorite_border_outlined,
+                const FavoritiesPage(),
+                panelWidth,
+              ),
+              buildPanelButton(
+                context,
+                'Sıralama',
+                Icons.account_tree_outlined,
+                const RankedPage(),
+                panelWidth,
+              ),
             ],
           ),
         ),
