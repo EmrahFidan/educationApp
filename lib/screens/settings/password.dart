@@ -2,24 +2,34 @@ import 'package:education/recurring/colors.dart';
 import 'package:education/screens/login/logIn_page.dart';
 import 'package:flutter/material.dart';
 
-class PasswordPage extends StatelessWidget {
+class PasswordPage extends StatefulWidget {
   const PasswordPage({super.key});
 
-  Widget buildInputContainer(String hintText, bordercolor) {
-    double space = 30;
+  @override
+  // ignore: library_private_types_in_public_api
+  _PasswordPageState createState() => _PasswordPageState();
+}
 
-    double inputWidth = 350; // 350
-    double inputHeight = 50; // 50
+class _PasswordPageState extends State<PasswordPage> {
+  double get specialSizeWidth => MediaQuery.of(context).size.width / 100;
+  double get specialSizeHeight => MediaQuery.of(context).size.height / 100;
+  static const double specialSize = 1;
+  static const double fontSize = 15;
+  static const double space = 20;
+
+  Widget buildInputContainer(String hintText, bordercolor) {
+    double inputWidth = 89.12 * specialSizeWidth;
+    double inputHeight = 6.2217 * specialSizeHeight;
 
     return Container(
       width: inputWidth,
       height: inputHeight,
-      padding: EdgeInsets.only(left: space * 2 / 3),
+      padding: const EdgeInsets.only(left: space),
       decoration: BoxDecoration(
         color: ColorVariations.primaryColor,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(space),
         border: Border.all(
-          width: 1,
+          width: specialSize,
           color: bordercolor,
         ),
       ),
@@ -32,7 +42,7 @@ class PasswordPage extends StatelessWidget {
                 hintText: hintText,
                 hintStyle: const TextStyle(
                   color: ColorVariations.transparentTextColor,
-                  fontSize: 15,
+                  fontSize: fontSize,
                 ), // Güncellendi
                 focusedBorder: InputBorder.none,
               ),
@@ -44,12 +54,14 @@ class PasswordPage extends StatelessWidget {
   }
 
   Widget buildUpdateButton(BuildContext context) {
+    double updateWidth = 40.74 * specialSizeWidth;
+    double updateHeight = 4.97 * specialSizeHeight;
     return Container(
-      width: 160,
-      height: 40,
+      width: updateWidth,
+      height: updateHeight,
       decoration: BoxDecoration(
         color: ColorVariations.updateButtonColor,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(space),
       ),
       child: TextButton(
         onPressed: () {
@@ -63,7 +75,7 @@ class PasswordPage extends StatelessWidget {
           "Şifremi güncelle",
           style: TextStyle(
             fontStyle: FontStyle.italic,
-            fontSize: 14,
+            fontSize: fontSize - 1,
             color: ColorVariations.textColor,
           ),
         ),
@@ -79,29 +91,30 @@ class PasswordPage extends StatelessWidget {
         title: const Text(
           'Şifremi değiştir',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: (fontSize / 5) * 8,
             fontStyle: FontStyle.italic,
             color: Color(0xFFCCC9DC),
           ),
         ),
-        toolbarHeight: 70,
+        toolbarHeight: 70 * specialSize,
         backgroundColor: ColorVariations.secondaryColor,
       ),
       backgroundColor: ColorVariations.primaryColor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 40),
+        padding: const EdgeInsets.symmetric(
+            horizontal: space * 4, vertical: space * 2),
         child: Column(
           children: [
-            const SizedBox(height: 60),
+            const SizedBox(height: space * 3),
             // Add 3 text fields here
             buildInputContainer(
                 "Eski Şifrenizi giriniz", ColorVariations.falseColor),
-            const SizedBox(height: 30),
+            const SizedBox(height: space * 2),
             buildInputContainer(
                 "Yeni Şifrenizi giriniz", ColorVariations.trueColor),
-            const SizedBox(height: 60),
+            const SizedBox(height: space * 3),
             buildUpdateButton(context),
-            const SizedBox(height: 60),
+            const SizedBox(height: space * 3),
             GestureDetector(
               onTap: () {
                 // Link'e tıklanınca ?
@@ -111,7 +124,7 @@ class PasswordPage extends StatelessWidget {
                 child: Text(
                   "Eski şifrenizi mi unuttunuz ? ",
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: fontSize - 1,
                     color: ColorVariations.transparentTextColor,
                     decoration: TextDecoration
                         .underline, // Metni altı çizili yaparak bir bağlantı gibi gösteriyoruz.

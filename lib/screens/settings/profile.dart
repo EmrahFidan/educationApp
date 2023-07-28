@@ -1,14 +1,78 @@
 import 'package:education/recurring/colors.dart';
 import 'package:flutter/material.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+  // ignore: library_private_types_in_public_api
+  _ProfilePageState createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  double get specialSizeWidth => MediaQuery.of(context).size.width / 100;
+  double get specialSizeHeight => MediaQuery.of(context).size.height / 100;
+
+  static const double specialSize = 1;
+  static const double fontSize = 15;
+  static const double space = 10;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text(
+          'Profil',
+          style: TextStyle(
+            fontSize: fontSize * 3,
+            fontStyle: FontStyle.italic,
+            color: Color(0xFFCCC9DC),
+          ),
+        ),
+        toolbarHeight: 70 * specialSize,
+        backgroundColor: ColorVariations.secondaryColor,
+      ),
+      backgroundColor: ColorVariations.primaryColor,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+            horizontal: 3 * space, vertical: 3 * space),
+        child: Column(
+          children: [
+            const SizedBox(height: space * 3),
+            // Call the buildPhotoButton() method here
+            buildPhotoButton(),
+            const SizedBox(height: space * 2),
+            const Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Profil fotoğrafımı değiştir",
+                style: TextStyle(
+                  fontSize: fontSize - 3,
+                  color: ColorVariations.transparentTextColor,
+                ),
+              ),
+            ),
+            const SizedBox(height: 6 * space),
+            // Add 3 text fields here
+            _buildText("Kullanıcı Adı: "),
+            const SizedBox(height: 3 * space),
+            _buildText("E-mail:  "),
+            const SizedBox(height: 3 * space),
+            _buildText("Puanınız: "),
+            const SizedBox(height: 6 * space),
+            buildLogoutButton(),
+          ],
+        ),
+      ),
+    );
+  }
 
   Widget _buildText(String text) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: fontSize),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(8 * specialSize),
         color: ColorVariations.primaryColor,
       ),
       child: Align(
@@ -16,7 +80,7 @@ class ProfilePage extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-            fontSize: 18,
+            fontSize: fontSize + 3,
             color: ColorVariations.textColor,
           ),
         ),
@@ -25,14 +89,15 @@ class ProfilePage extends StatelessWidget {
   }
 
   Widget buildPhotoButton() {
-    double photoButton = 60;
+    double photoButton = 60 * specialSize;
+
     return Align(
       alignment: Alignment.topCenter,
       child: SingleChildScrollView(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(25),
+              borderRadius: BorderRadius.circular(25 * specialSize),
             ),
             backgroundColor: ColorVariations.secondaryColor,
             padding: EdgeInsets.zero,
@@ -44,7 +109,7 @@ class ProfilePage extends StatelessWidget {
             width: photoButton,
             height: photoButton,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
+              borderRadius: BorderRadius.circular(25 * specialSize),
             ),
           ),
         ),
@@ -53,12 +118,14 @@ class ProfilePage extends StatelessWidget {
   }
 
   Widget buildLogoutButton() {
+    double buttonWidth = 25.4629 * specialSizeWidth;
+    double buttonHeight = 4.97 * specialSizeHeight;
     return Container(
-      width: 100,
-      height: 40,
+      width: buttonWidth,
+      height: buttonHeight,
       decoration: BoxDecoration(
         color: ColorVariations.falseColor,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20 * specialSize),
       ),
       child: TextButton(
         onPressed: () {
@@ -68,59 +135,9 @@ class ProfilePage extends StatelessWidget {
           "Çıkış Yap",
           style: TextStyle(
             fontStyle: FontStyle.italic,
-            fontSize: 16,
+            fontSize: fontSize + 1,
             color: ColorVariations.textColor,
           ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          'Profil',
-          style: TextStyle(
-            fontSize: 24,
-            fontStyle: FontStyle.italic,
-            color: Color(0xFFCCC9DC),
-          ),
-        ),
-        toolbarHeight: 70,
-        backgroundColor: ColorVariations.secondaryColor,
-      ),
-      backgroundColor: ColorVariations.primaryColor,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-        child: Column(
-          children: [
-            const SizedBox(height: 30),
-            // Call the buildPhotoButton() method here
-            buildPhotoButton(),
-            const SizedBox(height: 20),
-            const Align(
-              alignment: Alignment.center,
-              child: Text(
-                "Profil fotoğrafımı değiştir",
-                style: TextStyle(
-                  fontSize: 12,
-                  color: ColorVariations.transparentTextColor,
-                ),
-              ),
-            ),
-            const SizedBox(height: 60),
-            // Add 3 text fields here
-            _buildText("Kullanıcı Adı: "),
-            const SizedBox(height: 30),
-            _buildText("E-mail:  "),
-            const SizedBox(height: 30),
-            _buildText("Puanınız: "),
-            const SizedBox(height: 60),
-            buildLogoutButton(),
-          ],
         ),
       ),
     );
