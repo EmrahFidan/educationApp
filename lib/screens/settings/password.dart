@@ -2,34 +2,24 @@ import 'package:education/recurring/colors.dart';
 import 'package:education/screens/login/logIn_page.dart';
 import 'package:flutter/material.dart';
 
-class PasswordPage extends StatefulWidget {
+class PasswordPage extends StatelessWidget {
   const PasswordPage({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
-  _PasswordPageState createState() => _PasswordPageState();
-}
-
-class _PasswordPageState extends State<PasswordPage> {
-  double get specialSizeWidth => MediaQuery.of(context).size.width / 100;
-  double get specialSizeHeight => MediaQuery.of(context).size.height / 100;
-  static const double specialSize = 1;
-  static const double fontSize = 15;
-  static const double space = 20;
-
   Widget buildInputContainer(String hintText, bordercolor) {
-    double inputWidth = 89.12 * specialSizeWidth;
-    double inputHeight = 6.2217 * specialSizeHeight;
+    double space = 30;
+
+    double inputWidth = 350; // 350
+    double inputHeight = 50; // 50
 
     return Container(
       width: inputWidth,
       height: inputHeight,
-      padding: const EdgeInsets.only(left: space),
+      padding: EdgeInsets.only(left: space * 2 / 3),
       decoration: BoxDecoration(
         color: ColorVariations.primaryColor,
-        borderRadius: BorderRadius.circular(space),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          width: specialSize,
+          width: 1,
           color: bordercolor,
         ),
       ),
@@ -42,7 +32,7 @@ class _PasswordPageState extends State<PasswordPage> {
                 hintText: hintText,
                 hintStyle: const TextStyle(
                   color: ColorVariations.transparentTextColor,
-                  fontSize: fontSize,
+                  fontSize: 15,
                 ), // Güncellendi
                 focusedBorder: InputBorder.none,
               ),
@@ -54,14 +44,12 @@ class _PasswordPageState extends State<PasswordPage> {
   }
 
   Widget buildUpdateButton(BuildContext context) {
-    double updateWidth = 40.74 * specialSizeWidth;
-    double updateHeight = 4.97 * specialSizeHeight;
     return Container(
-      width: updateWidth,
-      height: updateHeight,
+      width: 160,
+      height: 40,
       decoration: BoxDecoration(
         color: ColorVariations.updateButtonColor,
-        borderRadius: BorderRadius.circular(space),
+        borderRadius: BorderRadius.circular(20),
       ),
       child: TextButton(
         onPressed: () {
@@ -75,7 +63,7 @@ class _PasswordPageState extends State<PasswordPage> {
           "Şifremi güncelle",
           style: TextStyle(
             fontStyle: FontStyle.italic,
-            fontSize: fontSize - 1,
+            fontSize: 14,
             color: ColorVariations.textColor,
           ),
         ),
@@ -91,30 +79,29 @@ class _PasswordPageState extends State<PasswordPage> {
         title: const Text(
           'Şifremi değiştir',
           style: TextStyle(
-            fontSize: (fontSize / 5) * 8,
+            fontSize: 24,
             fontStyle: FontStyle.italic,
             color: Color(0xFFCCC9DC),
           ),
         ),
-        toolbarHeight: 70 * specialSize,
+        toolbarHeight: 70,
         backgroundColor: ColorVariations.secondaryColor,
       ),
       backgroundColor: ColorVariations.primaryColor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(
-            horizontal: space * 4, vertical: space * 2),
+        padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 40),
         child: Column(
           children: [
-            const SizedBox(height: space * 3),
+            const SizedBox(height: 60),
             // Add 3 text fields here
             buildInputContainer(
                 "Eski Şifrenizi giriniz", ColorVariations.falseColor),
-            const SizedBox(height: space * 2),
+            const SizedBox(height: 30),
             buildInputContainer(
                 "Yeni Şifrenizi giriniz", ColorVariations.trueColor),
-            const SizedBox(height: space * 3),
+            const SizedBox(height: 60),
             buildUpdateButton(context),
-            const SizedBox(height: space * 3),
+            const SizedBox(height: 60),
             GestureDetector(
               onTap: () {
                 // Link'e tıklanınca ?
@@ -124,7 +111,7 @@ class _PasswordPageState extends State<PasswordPage> {
                 child: Text(
                   "Eski şifrenizi mi unuttunuz ? ",
                   style: TextStyle(
-                    fontSize: fontSize - 1,
+                    fontSize: 14,
                     color: ColorVariations.transparentTextColor,
                     decoration: TextDecoration
                         .underline, // Metni altı çizili yaparak bir bağlantı gibi gösteriyoruz.

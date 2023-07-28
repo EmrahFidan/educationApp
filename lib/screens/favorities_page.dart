@@ -1,20 +1,9 @@
 import 'package:education/recurring/colors.dart';
 import 'package:flutter/material.dart';
 
-class FavoritiesPage extends StatefulWidget {
+class FavoritiesPage extends StatelessWidget {
   const FavoritiesPage({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
-  _FavoritiesPageState createState() => _FavoritiesPageState();
-}
-
-class _FavoritiesPageState extends State<FavoritiesPage> {
-  double get specialSizeWidth => MediaQuery.of(context).size.width / 100;
-  double get specialSizeHeight => MediaQuery.of(context).size.height / 100;
-  static const double specialSize = 1;
-  static const double fontSize = 8;
-  static const double space = 30;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,26 +12,26 @@ class _FavoritiesPageState extends State<FavoritiesPage> {
         title: const Text(
           'Beğendikleriniz',
           style: TextStyle(
-            fontSize: fontSize * 3,
+            fontSize: 24,
             fontStyle: FontStyle.italic,
-            color: ColorVariations.textColor,
+            color: Color(0xFFCCC9DC),
           ),
         ),
-        toolbarHeight: 70 * specialSize,
+        toolbarHeight: 70,
         backgroundColor: ColorVariations.primaryColor,
       ),
       backgroundColor: ColorVariations.secondaryColor,
       // Yukarıdaki satırda ekranın arka plan rengini tema ayarlarına göre ayarlıyoruz
       body: const Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: space,
-          vertical: space,
+          horizontal: 30,
+          vertical: 30,
         ),
         child: Center(
           child: Text(
             'Beğendiğiniz sorular daha sonra tekrar etmeniz için burada listelenir',
-            style: TextStyle(
-                fontSize: fontSize * 3, color: ColorVariations.textColor),
+            style: TextStyle(fontSize: 24),
+            selectionColor: Colors.white54,
           ),
         ),
       ),
