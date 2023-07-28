@@ -90,36 +90,38 @@ class PasswordPage extends StatelessWidget {
       backgroundColor: ColorVariations.primaryColor,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 40),
-        child: Column(
-          children: [
-            const SizedBox(height: 60),
-            // Add 3 text fields here
-            buildInputContainer(
-                "Eski Şifrenizi giriniz", ColorVariations.falseColor),
-            const SizedBox(height: 30),
-            buildInputContainer(
-                "Yeni Şifrenizi giriniz", ColorVariations.trueColor),
-            const SizedBox(height: 60),
-            buildUpdateButton(context),
-            const SizedBox(height: 60),
-            GestureDetector(
-              onTap: () {
-                // Link'e tıklanınca ?
-              },
-              child: const Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "Eski şifrenizi mi unuttunuz ? ",
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: ColorVariations.transparentTextColor,
-                    decoration: TextDecoration
-                        .underline, // Metni altı çizili yaparak bir bağlantı gibi gösteriyoruz.
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const SizedBox(height: 60),
+              // Add 3 text fields here
+              buildInputContainer(
+                  "Eski Şifrenizi giriniz", ColorVariations.falseColor),
+              const SizedBox(height: 30),
+              buildInputContainer(
+                  "Yeni Şifrenizi giriniz", ColorVariations.trueColor),
+              const SizedBox(height: 60),
+              buildUpdateButton(context),
+              const SizedBox(height: 60),
+              GestureDetector(
+                onTap: () {
+                  // Link'e tıklanınca ?
+                },
+                child: const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Eski şifrenizi mi unuttunuz ? ",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: ColorVariations.transparentTextColor,
+                      decoration: TextDecoration
+                          .underline, // Metni altı çizili yaparak bir bağlantı gibi gösteriyoruz.
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
