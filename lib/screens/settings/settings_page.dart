@@ -4,31 +4,20 @@ import 'package:education/screens/settings/password.dart';
 import 'package:education/screens/settings/profile.dart';
 import 'package:flutter/material.dart';
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
+  @override
+  // ignore: library_private_types_in_public_api
+  _SettingsPageState createState() => _SettingsPageState();
+}
 
-  // Yeni butonları oluşturan fonksiyon (widget)
-  Widget _buildButton(String buttonText, VoidCallback onPressed) {
-    return SizedBox(
-      width: 300,
-      height: 40,
-      child: ElevatedButton(
-        onPressed: onPressed,
-        style: ElevatedButton.styleFrom(
-          backgroundColor: ColorVariations.secondaryColor,
-          shadowColor: Colors
-              .transparent, // Gölgeyi kaldırmak için shadowColor parametresi eklendi
-        ),
-        child: Text(
-          buttonText,
-          style: const TextStyle(
-            fontSize: 16,
-            color: Colors.white,
-          ),
-        ),
-      ),
-    );
-  }
+class _SettingsPageState extends State<SettingsPage> {
+  double get specialSizeWidth => MediaQuery.of(context).size.width / 100;
+  double get specialSizeHeight => MediaQuery.of(context).size.height / 100;
+
+  static const double specialSize = 1;
+  static const double fontSize = 8;
+  static const double space = 50;
 
   @override
   Widget build(BuildContext context) {
@@ -38,32 +27,33 @@ class SettingsPage extends StatelessWidget {
         title: const Text(
           'Ayarlar',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: fontSize * 3,
             fontStyle: FontStyle.italic,
             color: Color(0xFFCCC9DC),
           ),
         ),
-        toolbarHeight: 70,
+        toolbarHeight: 70 * specialSize,
         backgroundColor: ColorVariations.primaryColor,
       ),
       backgroundColor: ColorVariations.secondaryColor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+        padding: const EdgeInsets.symmetric(
+            horizontal: space * 3.5, vertical: space),
         child: Column(
           children: [
-            const SizedBox(height: 50),
+            spaceHeight(space),
             _buildButton("Profil", () {
               // Buton 1 tıklandığında yapılacak işlemler
               Navigator.push(context,
                   MaterialPageRoute(builder: (_) => const ProfilePage()));
             }),
-            const SizedBox(height: 50),
+            spaceHeight(space),
             _buildButton("Şifre değiştirme", () {
               // Buton 1 tıklandığında yapılacak işlemler
               Navigator.push(context,
                   MaterialPageRoute(builder: (_) => const PasswordPage()));
             }),
-            const SizedBox(height: 50),
+            spaceHeight(space),
             _buildButton("Nasıl Oynanır ?", () {
               // Buton 2 tıklandığında yapılacak işlemler
               Navigator.push(context,
@@ -74,4 +64,30 @@ class SettingsPage extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildButton(String buttonText, VoidCallback onPressed) {
+    double buttonWidth = 76.388 * specialSizeWidth;
+    double buttonHeight = 4.977 * specialSizeHeight;
+    return SizedBox(
+      width: buttonWidth,
+      height: buttonHeight,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: ColorVariations.secondaryColor,
+          shadowColor: Colors
+              .transparent, // Gölgeyi kaldırmak için shadowColor parametresi eklendi
+        ),
+        child: Text(
+          buttonText,
+          style: const TextStyle(
+            fontSize: fontSize * 2,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
+  }
 }
+
+Widget spaceHeight(double height) => SizedBox(height: height);

@@ -142,9 +142,9 @@ class _MyHomePageState extends State<MyHomePage> {
     double panelWidth,
   ) {
     double paddingBottom = specialSizeHeight * 2;
-    double bottomPanelSpace = specialSizeHeight * 12;
-    double bottomPanelHeight = specialSizeHeight * 10;
-    double bottomPanelWidth = specialSizeWidth * 20;
+    double buttonPanelSpace = specialSizeHeight * 12;
+    double buttonPanelHeight = specialSizeHeight * 10;
+    double buttonPanelWidth = specialSizeWidth * 7;
 
     return Padding(
       padding: EdgeInsets.only(
@@ -163,13 +163,13 @@ class _MyHomePageState extends State<MyHomePage> {
           elevation: 0,
           padding: EdgeInsets.zero,
           backgroundColor: ColorVariations.secondaryColor,
-          minimumSize: Size(double.infinity, bottomPanelSpace),
+          minimumSize: Size(double.infinity, buttonPanelSpace),
         ),
         child: Row(
           children: [
             SizedBox(
-              width: bottomPanelWidth,
-              height: bottomPanelHeight,
+              width: buttonPanelWidth,
+              height: buttonPanelHeight,
               child: Icon(
                 icon,
                 size: 30 * specialSize, // Ekran genişliğine göre simge boyutu
