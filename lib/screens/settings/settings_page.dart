@@ -1,5 +1,6 @@
 import 'package:education/recurring/colors.dart';
 import 'package:education/screens/settings/how_to_play.dart';
+import 'package:education/screens/settings/password.dart';
 import 'package:education/screens/settings/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -55,6 +56,12 @@ class SettingsPage extends StatelessWidget {
               // Buton 1 tıklandığında yapılacak işlemler
               Navigator.push(context,
                   MaterialPageRoute(builder: (_) => const ProfilePage()));
+            }),
+            const SizedBox(height: 50),
+            _buildButton("Şifre değiştirme", () {
+              // Buton 1 tıklandığında yapılacak işlemler
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const PasswordPage()));
             }),
             const SizedBox(height: 50),
             _buildButton("Nasıl Oynanır ?", () {

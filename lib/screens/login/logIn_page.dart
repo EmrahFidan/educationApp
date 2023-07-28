@@ -104,13 +104,20 @@ class _LoginPage2State extends State<LoginPage2> {
           spaceHeight(space * 2),
           logInButton(context),
           spaceHeight(space * 2 / 3),
-          const Align(
-            alignment: Alignment.center,
-            child: Text(
-              "Şifrenizi mi unuttunuz ? ",
-              style: TextStyle(
-                fontSize: fontSize,
-                color: ColorVariations.transparentTextColor,
+          GestureDetector(
+            onTap: () {
+              // Link'e tıklanınca ?
+            },
+            child: const Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Şifrenizi mi unuttunuz ?",
+                style: TextStyle(
+                  fontSize: 14,
+                  color: ColorVariations.transparentTextColor,
+                  decoration: TextDecoration
+                      .underline, // Metni altı çizili yaparak bir bağlantı gibi gösteriyoruz.
+                ),
               ),
             ),
           ),

@@ -15,4 +15,6 @@ class ColorVariations {
 
   static const Color trueColor = Color(0xFF006400);
   static const Color falseColor = Color(0xFF6A040F);
+
+  static const Color updateButtonColor = Color(0xFF144998);
 }
