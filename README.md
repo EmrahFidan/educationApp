@@ -17,7 +17,7 @@ The purpose of the application is to watch the video and mark the correct answer
 </aside>
 
 
-> Oluşturduğum tasarımı figma üzerinden inceleyebilirsiniz :
+> You can examine the design I created via figma :
 > 
 
 [https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0](https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0) 
@@ -26,11 +26,11 @@ The purpose of the application is to watch the video and mark the correct answer
 ### ScreenShots
 You can look at the screenShots file to review the screenshots. 
 
-> Proje hala devam etmektedir, firebase ile veritabanına bağlanması gerekiyor. Şimdilik sadece sayfa tasarımlarını inceleyebilirsiniz.
+> The project is still ongoing, it needs to be linked to the database with firebase. For now, you can only review page designs.
 > 
 
 
-### Sosyal Medya Hesaplarım
+### Social Media Accounts
 
 [EmrahFidan - Overview](https://github.com/EmrahFidan)
 
