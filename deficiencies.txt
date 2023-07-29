@@ -1,0 +1,20 @@
+- Veri yok, play kısmındaki video alanına gelmesi gereken videolarımız yok. Geldiğinde rastgele video gösteren bir algoritma yazılarak o bölüme eklenmeli.
+- Kayıt ol ekramında fotoğraf ekle bölümüne tıklandığında kullanıcının cihazındaki galerisine (dosyalarına) erişmesi gerekiyor. 
+- Kayıt ol butonuna basıldığında kullanıcı bilgileri veritabanına kaydedilmeli. 
+- Giriş yap ekranında butona tıklandığında kullanıcı bilgileri veritabanında aranır ve bulunursa menü ekranına bilgilerle birlikte yönlendirilmeli. 
+- Giriş yap ekranında Şifrenizi mi unuttunuz alanına tıklanırsa kullanıcı mailine yeni kullanabileceği şifre gönderilemli ve veritabanında eski şifre yerine bu geçmeli, kullanıcı giriş yaptıktan sonra şifresini tekrar değiştirebiliyor zaten. bu bir alert mesaj olarak ekrana verilmeli. 
+- Giriş yap veya kayıt ol ekranında girilen yanlış bilgiler için alert message verilemli ekrana.
+- Kullanıcı giriş yaptıktan sonra menu kısmındaki profil fotoğrafı alanı veritabanında çekilerek verilemeli. 
+- Play alanındaki skor alanı her doğru cevap 5 puan her yanlış cevap -10 puan olacak şekilde algoritma oluşturulmalı. 
+- Play alanındaki Tekrar butonuna tıklandığında video tekrar oynatılmalı.
+- Play alanındaki Beğenme ikonuna tıklnadığında videonun veritabanındaki özel adı favoriler sayfasına eklenmeli (favoriler sayfası liste şeklinde olmalı, sonegelen ilk sırayı alacak şekilde). 
+- Favoriler sayfasına tıklandığında video isimlerine bastktan sonra play sayfasında o video oynatılmalı ve o videodan puan alınmamalı. 
+- Play sayfasında şık işaretlendiğinde kontrol et düğmesine tıklanmalı ve doğru ise Yeşil buton, yanlış ise kırmızı buton gözükmeli ve skor değişimi buna göre olmalı. 
+- Sıralama sayfasında veritabanındaki tüm kullanıcıların skorlarına göre büyüktan küçüğe sıralaması ama ilk 3 sıra ve kullanıcının bulunduğu skor aralığı gösterilmeli. 
+- Settings / Profil alanındaki bilgiler veritabanından öekilmeli ve foto değiştir butonu kayıt ol sayfasındaki aynı işlevi yerien getirmeli. 
+- Settings / Profil alanındaki Çıkış yap butonuna tıklandığında default uygulama da kayıt ol ekranı gösterilir. Ayrıca kullanıcı giriş yapmadan sadece menu barı açabilir onun dışında herhangibir sayfaya erişemez, sadece kayıt ol ve giriş yap ekranlarına erişim olmalı. 
+- Şİfre değiştirme ekranında şifremi güncelle butonuna tıklandığında veritabanındaki şifre değişir ve yerine yeni şifre yazılır. Ardından giriş yap ekranına yönlendir. BUradaki şifremi unuttum kısmına tıklanırsa mail gönderilir (yeni şifre) 
+Nasıl oynanır ? sayfası doldurulmalı ve oyunun nasıl oynanacağı anlatılmalı (basitçe). 
+
+
+
