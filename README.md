@@ -1,16 +1,37 @@
-# education
+# Education Faculty Mobile App
 
-A new Flutter project.
 
-## Getting Started
+Hello I'm Emrah Fidan 👋 
 
-This project is a starting point for a Flutter application.
+In my first internship, you will see the education practice I have done for my university's education faculty. The application was created using the flutter framework in the dart language.
 
-A few resources to get you started if this is your first Flutter project:
+The purpose of the application is to watch the video and mark the correct answer, such as competition programs. I designed an application like VoScreen.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<aside>
+👍 The project is suite for:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- clean code principles
+- responsive design
+- Android, Ios operating systems
+- Telephone, tablet, web access
+</aside>
+
+
+> You can examine the design I created via figma :
+> 
+
+[https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0](https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0) 
+
+
+### ScreenShots
+You can look at the screenShots file to review the screenshots. 
+
+> The project is still ongoing, it needs to be linked to the database with firebase. For now, you can only review page designs.
+> 
+
+
+### Social Media Accounts
+
+[EmrahFidan - Overview](https://github.com/EmrahFidan)
+
+[Linkedln](https://www.linkedin.com/in/emrah-fidann/)
