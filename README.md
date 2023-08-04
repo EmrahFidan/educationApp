@@ -1,37 +1,66 @@
-# Education Faculty Mobile App
+<h1 style="color: #800080;"> Education Family App </h1>
+
+This project is the mobile application I made in my provincial internship designed for the faculty of Education. A specially designed competition application for individuals with learning difficulties. The first application I made for mobile application design. We continued the project with my team where I saw the internship and I was interested in the design. 
+
+Made using flutter framework in darts.
+
+<h2 style="color: #ffa500;"> Özellikler </h1>
+
+- Flutter
+- Clean Code
+- Pesponsive
+- Support to all platforms
+- You can find my Figmada design: https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=0%3A1&mode=design&t=uY4VtOwxKemZjn4M-1
+
+  
+<h2 style="color: #ffa500;"> Ekran Görüntüleri</h1>
+
+![Screenshot 2023-07-28 182623 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/46cf388f-d7a8-4d19-9a97-01793ac6bd1a) ![Screenshot 2023-07-28 183026 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/fe23376f-812f-4f09-bdef-3037b97dc47d) ![Screenshot 2023-07-28 182643 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/81eb40b9-af95-4ad7-b45c-757608cd6ad6) ![Screenshot 2023-07-28 182611 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/b8697d9b-a243-48ff-8b6c-ef9a6e7eb30e) ![Screenshot 2023-07-28 182600 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/fd59be52-55e4-4007-b177-3f628db55b2e) ![Screenshot 2023-07-28 183017 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/0b9ee9ca-9fe9-4e09-8c39-e0a878188581) ![Screenshot 2023-07-28 182507 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/4332fa89-b792-4274-9c15-4c73c9a17e54) ![Screenshot 2023-07-28 182447 (Custom)](https://github.com/EmrahFidan/EmrahFidan/assets/114583209/a96dca68-8399-4c3a-a831-6653a8eee818)
 
 
-Hello I'm Emrah Fidan 👋 
+<h2 style="color: #ffa500;">Color eferences</h1>
 
-In my first internship, you will see the education practice I have done for my university's education faculty. The application was created using the flutter framework in the dart language.
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary | ![#0a192f](https://via.placeholder.com/10/0C1821?text=+) #0a192f |
+| Secondary | ![#00b48a](https://via.placeholder.com/10/1B2A41?text=+) #00b48a |
+| Text | ![#f8f8f8](https://via.placeholder.com/10/CCC9DC?text=+) #f8f8f8 |
+| Heding / Border | ![#00d1a0](https://via.placeholder.com/10/6247AA?text=+) #00d1a0 | 
+| True Button | ![#00d1a0](https://via.placeholder.com/10/006400?text=+) #006400 | 
+| False Button | ![#00d1a0](https://via.placeholder.com/10/6A040F?text=+) #6A040F | 
 
-The purpose of the application is to watch the video and mark the correct answer, such as competition programs. I designed an application like VoScreen.
-
-<aside>
-👍 The project is suite for:
-
-- clean code principles
-- responsive design
-- Android, Ios operating systems
-- Telephone, tablet, web access
-</aside>
+<h2 style="color: #ffa500;">Lesson Learned from</h1>
 
 
-> You can examine the design I created via figma :
-> 
+Responsive design is really hard for mobile applications. Because it is very difficult to adapt the areas I have designed specifically to the responsiv design because there is a lot of screen size variety. 
 
-[https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0](https://www.figma.com/file/jl62wanA1RBOmlHB12RpAi/Intern?type=design&node-id=31-412&mode=design&t=Py9HYViY9tbb20ua-0) 
+I also tried to add a clear theme - dark theme in my first project experiment, but I gave up because it made my code spaghetti code.
 
+<h2 style="color: #ffa500;">Adds</h1>
 
-### ScreenShots
-You can look at the screenShots file to review the screenshots. 
-
-> The project is still ongoing, it needs to be linked to the database with firebase. For now, you can only review page designs.
-> 
+The project is currently only designed designally. The back-end part will be completed later. deficiencies.txt file contains the file's deficiencies.
 
 
-### Social Media Accounts
+<h2 style="color: #ffa500;">Feedback</h1>
 
-[EmrahFidan - Overview](https://github.com/EmrahFidan)
+If you have any feedback, please contact us at emrahfdn.work@gmail.com.
 
-[Linkedln](https://www.linkedin.com/in/emrah-fidann/)
+---
+
+
+![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg)
+
+![Dart](https://img.shields.io/badge/Language-Dart-green.svg)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Version](https://img.shields.io/badge/Version-3.70.0-red.svg)
+
+---
+
+<h2 style="color: #ffa500;">Authors and Thanks</h1>
+
+- [@EmrahFidan](https://github.com/EmrahFidan) for design and development.
+
+
+  
