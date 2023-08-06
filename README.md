@@ -1,4 +1,4 @@
-<h1 style="color: #800080;"> Education Faculty App </h1>
+<h1 style="color: #800080;">📱 Education Faculty App </h1>
 
 This project is the mobile application I made in my provincial internship designed for the faculty of Education. A specially designed competition application for individuals with learning difficulties. The first application I made for mobile application design. We continued the project with my team where I saw the internship and I was interested in the design. 
 
