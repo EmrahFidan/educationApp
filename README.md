@@ -1,3 +1,7 @@
+
+![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-prange.svg)](https://opensource.org/licenses/MIT)
+
+
 <h1 style="color: #800080;">📱 Education Faculty App </h1>
 
 This project is the mobile application I made in my provincial internship designed for the faculty of Education. A specially designed competition application for individuals with learning difficulties. The first application I made for mobile application design. We continued the project with my team where I saw the internship and I was interested in the design. 
@@ -44,19 +48,6 @@ The project is currently only designed designally. The back-end part will be com
 <h2 style="color: #ffa500;">Feedback</h1>
 
 If you have any feedback, please contact us at emrahfdn.work@gmail.com.
-
----
-
-
-![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg)
-
-![Dart](https://img.shields.io/badge/Language-Dart-green.svg)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-![Version](https://img.shields.io/badge/Version-3.70.0-red.svg)
-
----
 
 <h2 style="color: #ffa500;">Authors and Thanks</h1>
 
