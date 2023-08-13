@@ -1,5 +1,8 @@
 
-![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-prange.svg)](https://opensource.org/licenses/MIT)
+![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-prange.svg)](https://opensource.org/licenses/MIT)<a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+
 
 
 <h1 style="color: #800080;">📱 Education Faculty App </h1>
