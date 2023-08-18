@@ -1,5 +1,5 @@
 
-![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![Developed with Visual Studio Code](https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-purple)](https://code.visualstudio.com/)<a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/">
+![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![Developed with Visual Studio Code](https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-green)](https://code.visualstudio.com/)<a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
 
