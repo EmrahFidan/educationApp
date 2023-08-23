@@ -1,11 +1,29 @@
+<h1 align="center">
+<br>
+📱 Education Faculty App 
+</h1>
 
-![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg) ![Dart](https://img.shields.io/badge/Language-Dart-purple.svg) ![Version](https://img.shields.io/badge/Version-3.70.0-red.svg) [![Developed with Visual Studio Code](https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-green)](https://code.visualstudio.com/)<a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+<h3 align="center">
+  <a class="header-badge" target="_blank" href="https://github.com/EmrahFidan">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-white.svg?logo=github&style=social"/>
   </a>
+  <a href="https://flutter.dev/" target="_blank">
+    <img alt="Flutter" src="https://img.shields.io/badge/Made%20with-Flutter-blue.svg"/>
+  </a>
+  <a href="https://dart.dev/" target="_blank">
+    <img alt="Dart" src="https://img.shields.io/badge/Language-Dart-purple.svg"/>
+  </a>
+  <img alt="Version" src="https://img.shields.io/badge/Version-3.70.0-red.svg"/>
+  <a href="https://code.visualstudio.com/" target="_blank">
+    <img alt="Developed with Visual Studio Code" src="https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-green"/>
+  </a>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/" >
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue.svg?logo=linkedin&style=social"/>
+  </a>
+</h3>
 
 
 
-<h1 style="color: #800080;">📱 Education Faculty App </h1>
 
 This project is the mobile application I made in my provincial internship designed for the faculty of Education. A specially designed competition application for individuals with learning difficulties. The first application I made for mobile application design. We continued the project with my team where I saw the internship and I was interested in the design. 
 
