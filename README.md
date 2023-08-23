@@ -15,7 +15,10 @@
   </a>
   <img alt="Version" src="https://img.shields.io/badge/Version-3.70.0-red.svg"/>
   <a href="https://code.visualstudio.com/" target="_blank">
-    <img alt="Developed with Visual Studio Code" src="https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-green"/>
+    <img alt="Developed with Visual Studio Code" src="https://img.shields.io/badge/Developed%20with-Visual%20Studio%20Code-darkgreen"/>
+  </a>
+  <a class="header-badge" target="_blank" href="https://github.com/EmrahFidan/educationApp/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/PritamSarbajna/tourism-website?color=darkblue"/>
   </a>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/emrah-fidann/" >
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-blue.svg?logo=linkedin&style=social"/>
